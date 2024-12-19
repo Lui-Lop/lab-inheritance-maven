@@ -1,5 +1,12 @@
 package edu.grinnell.csc207.util;
 
+
+/**
+ * Create a basic counter class to count things
+ * 
+ * @author Luis Lopez
+ * @author Mitch Paiva
+ */
 public class BasicCounter implements Counter {
   // Fields
   int count;
@@ -9,8 +16,8 @@ public class BasicCounter implements Counter {
   // Constructors
 
   public BasicCounter(int value) {
-    count = value;
-    start = value;
+    this.count = value;
+    this.start = value;
   }
 
   /**
@@ -18,7 +25,7 @@ public class BasicCounter implements Counter {
    * 
    */
   public void increment() {
-    count += 1;
+    this.count += 1;
   } // incrment
 
   /**
@@ -26,7 +33,7 @@ public class BasicCounter implements Counter {
    * 
    */
   public void reset() {
-    count = start;
+    this.count = start;
   } // reset
 
   /**
@@ -41,11 +48,10 @@ public class BasicCounter implements Counter {
   /**
    * which returns the value of count
    * 
-   * @param count
    * @return
    */
   public int get() {
-    return count;
+    return this.count;
   } // get
 
 } // Counter

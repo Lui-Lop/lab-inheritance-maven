@@ -2,6 +2,9 @@ package edu.grinnell.csc207.util;
 
 /**
  * Counters that you can decrement.
+ * 
+ * @author Mitch Paiva
+ * @author Luis Lopez
  */
 public class DecrementableCounter extends BasicCounter {
   /**
